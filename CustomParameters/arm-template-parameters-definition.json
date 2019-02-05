@@ -1,0 +1,54 @@
+{
+    "Microsoft.DataFactory/factories/pipelines": {
+        "properties": {
+            "variables": {
+                "*": {"defaultValue": "="}
+            }
+        }
+    },
+    "Microsoft.DataFactory/factories/linkedServices": {
+        "*": {
+            "properties": {
+                "typeProperties": {
+                    "accountName": "=",
+                    "username": "=",
+                    "userName": "=",
+                    "accessKeyId": "=",
+                    "servicePrincipalId": "=",
+                    "userId": "=",
+                    "clientId": "=",
+                    "clusterUserName": "=",
+                    "clusterSshUserName": "=",
+                    "hostSubscriptionId": "=",
+                    "clusterResourceGroup": "=",
+                    "subscriptionId": "=",
+                    "resourceGroupName": "=",
+                    "tenant": "=",
+                    "dataLakeStoreUri": "=",
+                    "baseUrl": "=",
+                    "connectionString": "|:-connectionString:secureString",
+                    "batchUri": "=",
+                    "poolName": "=",
+                    "domain": "=",
+                    "existingClusterId": "="
+                }
+            }
+        }
+    },
+    "Microsoft.DataFactory/factories/triggers": {
+        "properties": {
+            "runtimeState": "=",
+            "typeProperties": {
+                "recurrence": {
+                    "frequency": "=",
+                    "interval": "=",
+                    "startTime": "=",
+                    "schedule": {
+                        "minutes": "=",
+                        "hours": "="
+                    }
+                }
+            }
+        }
+    }
+}
