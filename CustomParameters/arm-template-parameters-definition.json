@@ -43,10 +43,10 @@
                     "frequency": "=",
                     "interval": "=",
                     "startTime": "=",
-                    "schedule": {
-                        "minutes": "=",
-                        "hours": "="
-                    }
+                  "schedule": {
+                    "minutes": "=:minutes:array",
+                    "hours": "=:hours:array"
+                  }
                 }
             }
         }
